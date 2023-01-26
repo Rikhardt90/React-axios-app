@@ -5,9 +5,9 @@ import "./Navbar.scss";
 const Navbar = () => {
   return (<header>
     <nav>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/characters">Characters</NavLink>
-      <NavLink to="/locations">Locations</NavLink>
+      <NavLink className="nav-link" to="/">Home</NavLink>
+      <NavLink className="nav-link" to="/characters">Characters</NavLink>
+      <NavLink className="nav-link" to="/locations">Locations</NavLink>
     </nav>
   </header>);
 };

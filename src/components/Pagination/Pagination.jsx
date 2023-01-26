@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./Pagination.scss"
 
 const Pagination = ({pageData}) => {
   const [actualPage, setActualPage] = useState(1);
@@ -9,9 +10,9 @@ const Pagination = ({pageData}) => {
   }
 
   return (
-    <div>
+    <div className="pagination">
       <button onClick={() => changePage(actualPage - 1)}>{"<"}</button>
-      {actualPage}
+      <p>{actualPage}</p>
       <button onClick={() => changePage(actualPage + 1)}>{">"}</button>
     </div>
   );

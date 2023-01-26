@@ -1,0 +1,67 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  button {
+    background-color: rgb(20, 20, 20); /* Green */
+    border: solid 2px greenyellow;
+    border-radius: 20%;
+    color: greenyellow;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  p{
+    color: greenyellow;
+    font-size: 40px;
+    padding: 0px 30px 0px 30px;
+  }
+}
+
+//Mobile
+@media (min-width: 100px) and (max-width: 424px) {
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          background-color: rgb(20, 20, 20); /* Green */
+          border: solid 2px greenyellow;
+          border-radius: 20%;
+          color: greenyellow;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 10px;
+        }
+        p{
+          color: greenyellow;
+          font-size: 20px;
+          padding: 0px 30px 0px 30px;
+        }
+      }
+}
+//Tablet
+@media (min-width: 425px) and (max-width: 1023px) {
+    .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+          background-color: rgb(20, 20, 20); /* Green */
+          border: solid 2px greenyellow;
+          border-radius: 20%;
+          color: greenyellow;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          font-size: 20px;
+        }
+        p{
+          color: greenyellow;
+          font-size: 30px;
+          padding: 0px 30px 0px 30px;
+        }
+      }
+}

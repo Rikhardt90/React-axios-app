@@ -1,9 +1,40 @@
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    
- &active{
-    background-color: yellow;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    rgba(20, 20, 20, 0),
+    rgba(0, 217, 255, 0.2)
+  );
+  border-bottom: solid 2px greenyellow;
+
+  .nav-link {
+    padding: 2%;
+    color: greenyellow;
+    text-decoration: none;
+    font-size: 40px;
+    transition-duration: 0.5s;
+  }
+
+  .nav-link:hover {
+    transform: scale(1.2, 1.2);
+    transform-origin: center;
+  }
 }
+
+//Mobile
+@media (min-width: 100px) and (max-width: 424px) {
+  nav {
+    .nav-link {
+      font-size: 20px;
+    }
+  }
+}
+//Tablet
+@media (min-width: 425px) and (max-width: 1023px) {
+    nav {
+        .nav-link {
+          font-size: 40px;
+        }
+      }
 }

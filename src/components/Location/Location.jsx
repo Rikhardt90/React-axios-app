@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import axios from "axios";
 import LocationGallery from "../LocationGallery/LocationGallery";
 import Pagination from "../Pagination/Pagination";
-import "./Location.scss"
+import "./Location.scss";
 
 export default function Locations() {
   const [locations, setLocations] = useState([]);
@@ -20,9 +20,9 @@ export default function Locations() {
   }, []);
 
   return (
-    <div>
-      <LocationGallery list={locations} />
+    <div className="locations-div">
       <Pagination pageData={getLocations} />
+      <LocationGallery list={locations} />
     </div>
   );
 }

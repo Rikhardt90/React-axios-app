@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useEffect } from "react";
+import "./Characters.scss";
 import axios from "axios";
 import Gallery from "../Gallery/Gallery";
 import Pagination from "../Pagination/Pagination";
@@ -19,9 +20,9 @@ export default function Characters() {
   }, []);
 
   return (
-    <div>
-      <Gallery list={characters} />
+    <div className="character-div">
       <Pagination pageData={getCharacters} />
+      <Gallery list={characters} />
     </div>
   );
 }
